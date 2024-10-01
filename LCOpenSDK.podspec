@@ -12,6 +12,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/LCOpenSDK/LCOpenSDK.git", :tag => spec.version.to_s }
   spec.frameworks   = 'CoreLocation', 'CoreAudio', 'CoreVideo', 'CoreMedia', 'CFNetwork', 'VideoToolbox', 'AudioToolbox', 'AVFoundation','OpenGLES','MediaAccessibility','MediaPlayer'
   spec.libraries    = "z"
-  spec.vendored_frameworks = 'Framework/LCOpenSDKDynamic.framework'
+  spec.vendored_frameworks = 'Framework/LCOpenSDKDynamic.xcframework'
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64' }
 end
